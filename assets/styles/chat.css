@@ -1,0 +1,109 @@
+
+/* Estilos para el header del chat */
+.Chat_header {
+    display: flex;
+    align-items: center;
+}
+.Chat_header i {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #333; /* Color del ícono */
+    margin: 0 10px; /* Margen alrededor del ícono */
+}
+
+#chatImage {
+    width: 60px;  /* Ajusta el ancho de la imagen */
+    height: 60px; /* Ajusta el alto de la imagen */
+    border-radius: 50%;
+    margin-right: 15px; /* Ajusta el margen derecho */
+}
+
+#chatName {
+    margin: 0;
+    font-size: 18px; /* Ajusta el tamaño del texto */
+}
+
+
+
+/* Estilos para los mensajes del chat */
+.Chat_Content p {
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: inline-block;
+    position: relative;
+    text-align: right; /* Alinear el texto a la derecha dentro de la burbuja */
+    align-self: flex-end; /* Alinear la burbuja a la derecha del contenedor */
+}
+
+/* Estilos para el mensaje del usuario */
+.Chat_Content p.usuario {
+    background-color: #007BFF;
+    color: white;
+    text-align: left; /* Alinear el texto a la izquierda para mensajes del usuario */
+    align-self: flex-start; /* Alinear la burbuja a la izquierda del contenedor para mensajes del usuario */
+}
+
+/* Estilos para la cola de la burbuja */
+.Chat_Content p::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    right: -10px; /* Posición de la cola a la derecha para mensajes generales */
+}
+
+.Chat_Content p.usuario::before {
+    background-color: #007BFF;
+    left: -10px; /* Posición de la cola a la izquierda para mensajes del usuario */
+}
+
+.Chat_Content p {
+    display: table;
+}
+
+.Chat_Content p::before {
+    display: table-cell;
+    content: '';
+    width: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

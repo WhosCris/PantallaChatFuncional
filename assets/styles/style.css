@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Contenedor principal */
+.Screen {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f8ff; /* Azure */
+}
+
+/* Contenedor lateral */
+.SideBar {
+    background-color: #00ced1; /* Aqua */
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SideBar_Perfil {
+    background-color: #f0f8ff; /* Azure */
+    width: 20vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    overflow: hidden;
+}
+
+.SideBar_Perfil_txt {
+    flex-grow: 1; 
+    padding: 0 10px; 
+}
+
+.estado {
+    display: flex;
+    align-items: center;
+}
+
+.estado_perfil {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
+}
+
+.nuevoChat input[type="button"] {
+    background-color: #007bff; /* Primary Blue */
+    margin: 0 auto; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.nuevoChat input[type="button"]:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1); 
+}
+
+/* Chats */
+.SideBar_Chats {
+    background-color: #deb887; /* Burlywood */
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.SideBar_Chats_Chat {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    border: 2px solid black; 
+}
+
+.Elementos_chat {
+    flex-grow: 1; 
+}
+
+.Chat {
+    background-color: #ffe4b5; /* Bisque */
+    width: 80vw;
+    flex-direction: column;
+}
+
+.Chat_header {
+    background-color: #00ced1; /* Aqua */
+    height: 15vh;
+    border: 3;
+}
+
+.Chat_Content {
+    background-color: #7fffd4; /* Aquamarine */
+    height: 77vh;
+    overflow-y: scroll;
+}
+
+.Chat_MessageBar {
+    background-color: white;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.TXTmensaje {
+    width: 100vw;
+}
+
+.btnEnviar {
+    width: 10vw;
+}
+
+.btnEnviar:hover {
+    background-color: #f5f5dc; /* Beige */
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* Animaciones y transiciones */
+.SideBar_Chats_Chat:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #6495ed; /* Cornflower Blue */
+}
+
+button:hover {
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transform: scale(1.1);
+    background-color: #7fffd4; /* Aquamarine */
+}

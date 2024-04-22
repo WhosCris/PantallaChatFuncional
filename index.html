@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Enlaces a las hojas de estilo CSS -->
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatMediaScreens</title>
+</head>
+
+<body>
+    <!-- Contenedor principal de la pantalla -->
+    <section class="Screen">
+        <!-- Barra lateral -->
+        <section class="SideBar">
+            <!-- Perfil del usuario -->
+            <section class="SideBar_Perfil">
+                <img src="/assets/images/HenryCavill.jpeg" alt="Imagen de Perfil">
+                <!-- Texto del perfil -->
+                <section class="SideBar_Perfil_txt">
+                    <h1>You</h1>
+                    <p>Conectado</p>
+                </section>
+                <!-- Estado del perfil -->
+                <section class="estado">
+                    <img class="estado_perfil" id="estadoImg" src="/assets/icons/estado_Activo.png" alt="">
+                </section>
+            </section>
+            
+            <!-- Botón para iniciar nuevo chat -->
+            <section class="nuevoChat">
+                <input type="button" name="newChat" value="Iniciar Nuevo Chat" id="newChat">
+            </section>
+            
+            <!-- Lista de chats -->
+            <section class="SideBar_Chats">
+                <!-- Template de chat -->
+                <section class="SideBar_Chats_Chat" id="ChatTemplate">
+                    <section class="imagen">
+                        <img src="/assets/images/BruceWayne.jpeg" alt="Bruce Wayne">
+                    </section>
+                    <!-- Detalles del chat -->
+                    <section class="Elementos_chat">
+                        <nombre>Bruce</nombre><br>
+                        <mensaje>En 5 llego</mensaje>
+                    </section>
+                </section>
+                <!-- Chats existentes -->
+                <section class="SideBar_Chats_Chat">
+                    <!-- Detalles del chat -->
+                    <section class="imagen">
+                        <img src="/assets/images/Isabel_II.jpeg" alt="Isabel Segunda">
+                    </section>
+                    <section class="Elementos_chat">
+                        <nombre>Abuela</nombre><br>
+                        <mensaje>Hice torta</mensaje>
+                    </section>
+                </section>
+                <section class="SideBar_Chats_Chat">
+                    <!-- Detalles del chat -->
+                    <section class="imagen">
+                        <img src="/assets/images/Antoni_Psicologo.jpeg" alt="Abogado">
+                    </section>
+                    <section class="Elementos_chat">
+                        <nombre>Antonio Abogado</nombre><br>
+                        <mensaje>Tengo los papeles que faltaban</mensaje>
+                    </section>
+                </section>
+                <section class="SideBar_Chats_Chat">
+                    <!-- Detalles del chat -->
+                    <section class="imagen">
+                        <img src="/assets/images/Billie.jpeg" alt="Billie">
+                    </section>
+                    <section class="Elementos_chat">
+                        <nombre>Billie</nombre><br>
+                        <mensaje>New Album, tomorrow</mensaje>
+                    </section>
+                </section>
+                <section class="SideBar_Chats_Chat">
+                    <!-- Detalles del chat -->
+                    <section class="imagen">
+                        <img src="/assets/images/Hande.jpeg" alt="Hande">
+                    </section>
+                    <section class="Elementos_chat">
+                        <nombre>Marti</nombre><br>
+                        <mensaje>No compila :c</mensaje>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Área de chat activo -->
+        <section class="Chat">
+            <!-- Encabezado del chat -->
+            <section class="Chat_header">
+                <i class="fas fa-chevron-left"></i>
+                <img id="chatImage" src="" alt="Imagen de Perfil">
+                <h1 id="chatName">Título del chat</h1>
+                <div class="dropdown">
+                    <button class="dropdown-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" id="eliminarChat">Eliminar chat</a>
+                        <a href="#" id="vaciarChat">Vaciar chat</a>
+                        <a href="#" id="cambiarFondo">Cambiar fondo</a>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- Contenido del chat -->
+            <section class="Chat_Content" id="chatContent">
+            
+            </section>
+            <!-- Barra de mensajes -->
+            <section class="Chat_MessageBar">
+                <input class="TXTmensaje" type="text" name="txtMsg" placeholder="Escriba su mensaje">
+                <input class="btnEnviar" type="button" name="btnSend" value="Enviar">
+            </section>
+        </section>
+    </section>
+    <!-- Script -->
+    <script src="/assets/scripts/script.js"></script>
+</body>
+
+</html>

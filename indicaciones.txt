@@ -1,0 +1,36 @@
+Estimados alumnos, junto con saludar y esperando esten teniendo un buen semestre, como les comente en clase, la 2da nota correspondera a un trabajo, continuando lo realizado en clases sobre el proyecto de "chat", a continuación detallare los requerimientos que seran evaluado mas la rubrica de evaluación
+
+
+
+Contenido chat:
+
+Boton "nuevo chat" al hacer click debe agregar un chat nuevo
+Al pasar por los chat con efecto "hover" estos deben tener un estilo diferenciador, que permitan saber que se estan seleccionando
+El icono al lado izquierdo del menu de "hamburguesa" debe cambiarlo por un icono/boton que represente un cambio de estado, es decir, si le hago click debe cambiar el mensaje de "activo ahora" a "Desconectado" y viceversa
+La barra de chat debe ser con scroll, debe ser el diseño consistente
+Contenido Principal:
+
+El contenido debe tener 3 secciones, header, cuerpo y input de chat + boton enviar mensaje
+Funcionalmente el chat debe estar funcional, es decir, si usted escribe un mensaje y luego le da click al boton enviar mensaje, este mensaje debe aparecer en el cuerpo del chat
+Si no escribe nada y da click al boton enviar, no debe enviarse el mensaje
+Funcional:
+
+Al hacer click en un chat, se debe comportar de la siguiente manera:
+Header debe agregar la foto de avatar, agregar el nombre y ultima conexion (estilo whatsapp)
+En el cuerpo debe aparecer el mensaje que esta en el chat
+Al escribir en el chat y enviar, este debe funcionar
+Diseño de su app de chat
+Debe respetar altura, es decir si agrega un chat, no se descuadre el diseño
+
+
+
+
+Se hara una pregunta de conocimiento luego de revisado los puntos anteriores.
+
+
+
+El trabajo se revisara en clase el día jueves 25 de abril.
+
+
+
+Exito!
