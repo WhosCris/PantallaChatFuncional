@@ -103,6 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+//Le da funcion al icono de tres puntos en el header del chat
+
 document.addEventListener('DOMContentLoaded', function() {
     const eliminarChat = document.getElementById('eliminarChat');
     const vaciarChat = document.getElementById('vaciarChat');
